@@ -1,6 +1,7 @@
 import { HERO_CONTENT } from "../constants";
 import profilepic from "../assets/img.jpg";
 import {motion} from "framer-motion";
+
 const container=(delay) => ({
     hidden:{x:-100,opacity:0},
     visible:{
@@ -9,6 +10,7 @@ const container=(delay) => ({
         transition:{duration: 0.5, delay: delay},
     },
 });
+
 const Hero = () => {
   return (
     <div className="border-b border-neutral-900 pb-4 lg:mb-35">
@@ -46,6 +48,21 @@ const Hero = () => {
             className="my-2 max-w-xl py-6 font-light tracking-tighter">
               {HERO_CONTENT}
             </motion.p>
+
+            {/* CV Button */}
+            <motion.div
+              variants={container(1.2)}
+              initial="hidden"
+              animate="visible"
+              className="mt-8">
+              <a
+                href="/Kanishk_Singh_CV.pdf"  // Link to your CV file
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block px-6 py-3 text-lg font-semibold text-white bg-purple-400 rounded-lg shadow-lg hover:bg-blue-700 transition duration-300 ease-in-out">
+                Curriculum Vitae
+              </a>
+            </motion.div>
           </div>
         </div>
 
