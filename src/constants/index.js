@@ -40,11 +40,11 @@ export const EXPERIENCES = [
 
 export const PROJECTS = [
   {
-    title: "NULL",
+    title: "PeerLoop",
     image: project1,
-    description:
-      "",
-      technologies: ["____", "____", "____", "____", "____"],
+    description:"Peerloop is a professional networking platform designed specifically for freelancers, offering seamless communication and collaboration tools.This is a desktop website only!"
+    ,
+      technologies: ["React.js", "React-router-dom", "CSS3", "Firebase"],
   },
   {
     title: "NULL",
