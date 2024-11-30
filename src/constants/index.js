@@ -1,3 +1,4 @@
+import { link } from "framer-motion/client";
 import project1 from "../assets/projects/project-1.png";
 import project2 from "../assets/projects/project-2.png";
 import project3 from "../assets/projects/project-3.png";
@@ -42,9 +43,9 @@ export const PROJECTS = [
   {
     title: "PeerLoop",
     image: project1,
-    description:"Peerloop is a professional networking platform designed specifically for freelancers, offering seamless communication and collaboration tools.This is a desktop website only!"
-    ,
-      technologies: ["React.js", "React-router-dom", "CSS3", "Firebase"],
+    description:"Peerloop is a professional networking platform designed specifically for freelancers, offering seamless communication and collaboration tools.This is a desktop website only!",
+    link: "https://peer-loop2-0.vercel.app/",
+    technologies: ["React.js", "React-router-dom", "CSS3", "Firebase"],
   },
   {
     title: "NULL",
