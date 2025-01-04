@@ -48,11 +48,12 @@ export const PROJECTS = [
     technologies: ["React.js", "React-router-dom", "CSS3", "Firebase"],
   },
   {
-    title: "NULL",
+    title: "Aegis Club Website",
     image: project2,
+    link: "https://aegisclub.tech/",
     description:
-      "",
-      technologies: ["____", "____", "____", "____", "____"],
+      "The Cyber Security Club at DSCE, Bengaluru is dedicated to exploring advanced technologies and acquiring invaluable knowledge and hands-on experience in cybersecurity through engaging training sessions, interactive workshops, and collaborative initiatives with like-minded enthusiasts.",
+      technologies: ["React js", "Node js", "SupaBase", "React-router-dom", "Tailwind CSS"],
   },
   {
     title: "NULL",
