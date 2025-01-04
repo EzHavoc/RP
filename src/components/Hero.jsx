@@ -59,7 +59,7 @@ const Hero = () => {
                 href="/Kanishk_Singh_CV.pdf"  // Link to your CV file
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block px-6 py-3 text-lg font-semibold text-white bg-purple-400 rounded-lg shadow-lg hover:bg-blue-700 transition duration-300 ease-in-out">
+                className="inline-block px-6 py-3 text-lg font-semibold text-white bg-purple-400 rounded-lg shadow-lg hover:bg-gray-700 transition duration-300 ease-in-out">
                 Curriculum Vitae
               </a>
             </motion.div>
