@@ -56,11 +56,12 @@ export const PROJECTS = [
       technologies: ["React.js", "Node.js", "SupaBase", "React-router-dom", "Tailwind CSS"],
   },
   {
-    title: "NULL",
+    title: "PicShrink",
     image: project3,
+    link: "https://image-compressor-omega-two.vercel.app/",
     description:
-      "",
-      technologies: ["____", "____", "____", "____", "____"],
+      "PicShrink is a powerful and user-friendly image compression web application designed to reduce the size of your images without sacrificing quality. Whether you're a developer, designer, or simply looking to optimize your photos for faster web loading times, PicShrink makes it easy to compress images quickly and efficiently. With support for various file formats and intuitive drag-and-drop functionality, users can seamlessly compress images, making them more lightweight and web-ready. PicShrink is ideal for optimizing image-heavy websites, applications, or social media profiles, helping to improve performance and reduce storage costs.",
+      technologies: ["React.js", "Node.js", "Tailwind CSS", "TypeScript"],
   },
   {
     title: "NULL",
