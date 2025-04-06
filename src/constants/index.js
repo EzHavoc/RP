@@ -64,11 +64,12 @@ export const PROJECTS = [
       technologies: ["React.js", "Node.js", "Tailwind CSS", "TypeScript"],
   },
   {
-    title: "NULL",
+    title: "WePlusFoundation NGO",
     image: project4,
+    link: "https://we-plus-foundation2025.vercel.app/",
     description:
-      "",
-    technologies: ["____", "____", "____", "____", "____"],
+      "Small Acts, Big Impact 🤍 I designed and developed the official website for WePlusFoundation, an NGO dedicated to empowering underprivileged communities through small, meaningful actions. The organization focuses on providing aid to those in need and promoting education among the underserved.The goal of the website was to reflect the foundation’s mission—“Helping those in need, one step at a time”—by creating a user-friendly platform that spreads awareness, encourages donations, and highlights their ongoing initiatives.",
+    technologies: ["React.js", "SupaBase", "TypeScript", "Tailwind CSS", "Vite"],
   },
 ];
 
