@@ -53,7 +53,7 @@ export const PROJECTS = [
     link: "https://aegisclub.tech/",
     description:
       "The Cyber Security Club at DSCE, Bengaluru is dedicated to exploring advanced technologies and acquiring invaluable knowledge and hands-on experience in cybersecurity through engaging training sessions, interactive workshops, and collaborative initiatives with like-minded enthusiasts.",
-      technologies: ["React.js", "Node.js", "SupaBase", "React-router-dom", "Tailwind CSS"],
+      technologies: ["Node.js", "SupaBase", "React-router-dom", "Tailwind CSS","HTML"],
   },
   {
     title: "PicShrink",
