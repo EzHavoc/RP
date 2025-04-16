@@ -14,7 +14,7 @@ const container = (delay) => ({
 
 const roles = [
   "Web Developer",
-  "Cybersecurity Enthusiast",
+  "CyberSec Enthusiast",
   "Spring Boot Developer",
   "Java Enthusiast",
   "Tech Explorer",
@@ -57,7 +57,7 @@ const TypingRotatingText = ({ speed = 100, pause = 1000 }) => {
         variants={container(1)}
         initial="hidden"
         animate="visible"
-        className="bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-7xl font-semibold text-transparent leading-tight pb-1"
+        className="bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-6xl font-semibold text-transparent leading-tight pb-1"
       >
         {displayedText}
         <span className="animate-pulse">|</span>
@@ -78,7 +78,7 @@ const Hero = () => {
               variants={container(0.5)}
               initial="hidden"
               animate="visible"
-              className="pb-4 text-6xl font-thin tracking-tight bg-gradient-to-r from-gray-800 to-white bg-clip-text text-transparent lg:mt-16 lg:text-8xl"
+              className="pb-4 text-6xl font-thin tracking-tight bg-gradient-to-r from-gray-800 to-white bg-clip-text text-transparent lg:mt-16 lg:text-6xl"
             >
               Hi, My Name is Kanishk Singh
             </motion.h1>
