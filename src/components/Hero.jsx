@@ -52,7 +52,7 @@ const TypingRotatingText = ({ speed = 100, pause = 1000 }) => {
 
   return (
     <div className="flex items-center gap-2 mt-2">
-      <span className="text-4xl font-semibold text-gray-500">I'm a </span>
+      <span className="text-4xl font-semibold text-gray-600">I'm a </span>
       <motion.span
         variants={container(1)}
         initial="hidden"
