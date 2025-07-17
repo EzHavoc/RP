@@ -103,7 +103,7 @@ const Hero = () => {
               className="mt-8"
             >
               <a
-                href="/Kanishk_Singh_CV.pdf"
+                href="/Kanishk_CV.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block px-6 py-3 text-lg font-semibold text-white bg-purple-400 rounded-lg shadow-lg hover:bg-gray-700 transition duration-300 ease-in-out"
