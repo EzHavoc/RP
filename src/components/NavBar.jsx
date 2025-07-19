@@ -36,7 +36,7 @@ const NavBar = () => {
           <FaGithub />
         </a>
         <a
-          href="https://x.com/KanishkS40568"
+          href="https://x.com/singhkanishk778"
           target="_blank"
           rel="noopener noreferrer"
           className="hover:text-gray-500 transition-colors"
