@@ -181,7 +181,7 @@ const resizeCanvas = () => {
 
     return () => clearTimeout(timeout);
   }, [typedText, isDeleting]);
-   const [containerHeight, setContainerHeight] = useState('40vh');
+   const [containerHeight, setContainerHeight] = useState('60vh');
 
 useEffect(() => {
   const updateHeight = () => {
@@ -197,7 +197,7 @@ useEffect(() => {
   position: 'relative',
   width: '100%',
   height: containerHeight,
-  minHeight: '600px', // Ensures a base height on small screens
+  minHeight: '40%', // Ensures a base height on small screens
   backgroundColor: 'transparent',
   overflow: 'hidden',
 };
