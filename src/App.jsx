@@ -4,6 +4,7 @@ import About from "./components/About";
 import Technologies from "./components/Technologies";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
+import LetterGlitch from './components/LetterGlitch';
 const App = () => {
 return (
   <div className="overflow-x-hidden text-neutral-300 antialiased selection:bg-purple-300 selection:text-purple-800">
@@ -12,10 +13,17 @@ return (
     </div>
     <div className="container mx-auto px-8"></div>
     <NavBar/>
+
     <Hero/>
     <About/>
     <Technologies/>
     <Projects/>
+    <LetterGlitch
+         glitchSpeed={40}
+         centerVignette={true}
+         outerVignette={true}
+         smooth={true}
+         />
     <Contact/>
   </div>
   )
