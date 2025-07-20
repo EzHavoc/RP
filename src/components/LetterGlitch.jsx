@@ -269,7 +269,7 @@ useEffect(() => {
   >
     <canvas ref={canvasRef} style={canvasStyle} />
     <a
-      href="https://cyber-port-chi.vercel.app/"
+      href="https://cyber-port-ten.vercel.app/"
       target="_blank"
       rel="noopener noreferrer"
       style={centeredLinkStyle}
