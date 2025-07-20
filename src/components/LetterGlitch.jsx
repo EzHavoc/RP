@@ -59,22 +59,29 @@ const LetterGlitch = ({
       colorProgress: 1,
     }));
   };
+const resizeCanvas = () => {
+  const canvas = canvasRef.current;
+  const parent = canvas?.parentElement;
+  if (!canvas || !parent) return;
 
-  const resizeCanvas = () => {
-    const canvas = canvasRef.current;
-    if (!canvas) return;
-    const parent = canvas.parentElement;
-    const dpr = window.devicePixelRatio || 1;
-    const rect = parent.getBoundingClientRect();
-    canvas.width = rect.width * dpr;
-    canvas.height = rect.height * dpr;
-    canvas.style.width = `${rect.width}px`;
-    canvas.style.height = `${rect.height}px`;
-    context.current?.setTransform(dpr, 0, 0, dpr, 0, 0);
-    const { columns, rows } = calculateGrid(rect.width, rect.height);
-    initializeLetters(columns, rows);
-    drawLetters();
-  };
+  const dpr = window.devicePixelRatio || 1;
+  const rect = parent.getBoundingClientRect();
+
+  canvas.width = rect.width * dpr;
+  canvas.height = rect.height * dpr;
+
+  canvas.style.width = `${rect.width}px`;
+  canvas.style.height = `${rect.height}px`;
+
+  const ctx = canvas.getContext('2d');
+  context.current = ctx;
+  ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+
+  const { columns, rows } = calculateGrid(rect.width, rect.height);
+  initializeLetters(columns, rows);
+  drawLetters();
+};
+
 
   const drawLetters = () => {
     const ctx = context.current;
@@ -174,21 +181,39 @@ const LetterGlitch = ({
 
     return () => clearTimeout(timeout);
   }, [typedText, isDeleting]);
+   const [containerHeight, setContainerHeight] = useState('40vh');
+
+useEffect(() => {
+  const updateHeight = () => {
+    setContainerHeight(window.innerWidth < 768 ? '60vh' : '40vh');
+  };
+  updateHeight();
+  window.addEventListener('resize', updateHeight);
+  return () => window.removeEventListener('resize', updateHeight);
+}, []);
 
   // Style Objects
   const containerStyle = {
-    position: 'relative',
-    width: '100%',
-    height: '40%',
-    backgroundColor: 'transparent',
-    overflow: 'hidden',
-  };
+  position: 'relative',
+  width: '100%',
+  height: containerHeight,
+  minHeight: '300px', // Ensures a base height on small screens
+  backgroundColor: 'transparent',
+  overflow: 'hidden',
+};
+
+
+  
 
   const canvasStyle = {
-    width: '20%',
-    height: '20%',
-    backgroundColor: 'transparent',
-  };
+  position: 'absolute',
+  top: 0,
+  left: 0,
+  width: '100%',
+  height: '100%',
+  backgroundColor: 'transparent',
+};
+
 
   const centeredLinkStyle = {
     position: 'absolute',

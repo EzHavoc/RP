@@ -34,7 +34,7 @@ const About = () => {
         initial={{opacity:0, x: 100}}
         transition={{duration: 0.5}}
         className="w-full lg:w-1/2">
-          <div className="flex items-center justify-center">
+          <div className="flex items-center justify-center text-center lg:justify-start lg:text-left px-4 lg:px-0">
           <p className="my-2 max-w-xl py-6">{ABOUT_TEXT}</p>
           </div>
         </motion.div>
