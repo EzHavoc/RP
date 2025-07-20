@@ -197,7 +197,7 @@ useEffect(() => {
   position: 'relative',
   width: '100%',
   height: containerHeight,
-  minHeight: '300px', // Ensures a base height on small screens
+  minHeight: '600px', // Ensures a base height on small screens
   backgroundColor: 'transparent',
   overflow: 'hidden',
 };
@@ -206,8 +206,8 @@ useEffect(() => {
   
 
   const canvasStyle = {
-  position: 'absolute',
-  top: 10,
+  position: 'relative',
+  top: 0,
   left: 0,
   width: '100%',
   height: '100%',
