@@ -275,7 +275,7 @@ useEffect(() => {
       style={centeredLinkStyle}
     >
       {typedText}
-      <span className="cursor">|</span>
+      <span className="inline-block font-bold animate-blink">_</span>
     </a>
     {outerVignette && <div style={outerVignetteStyle} />}
     {centerVignette && <div style={centerVignetteStyle} />}
@@ -284,3 +284,4 @@ useEffect(() => {
 };
 
 export default LetterGlitch;
+
